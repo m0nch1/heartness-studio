@@ -59,3 +59,46 @@ body {
     }
   }
 }
+
+.company {
+  padding: 24px 0;
+  &__table {
+    width: 100%;
+    border: 1px solid #eaeaea;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  &__table-row {
+    border-bottom: 1px solid #eaeaea;
+  }
+  &__table-th {
+    box-sizing: border-box;
+    width: 19.5%;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    padding: 28px 30px;
+    @include tablet {
+      width: 100%;
+      display: block;
+      padding: 18px 19px 6px;
+    }
+  }
+  &__table-td {
+    box-sizing: border-box;
+    width: 80.5%;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    padding: 28px 32px;
+    position: relative;
+    @include tablet {
+      width: 100%;
+      display: block;
+      letter-spacing: 0.02em;
+      padding: 0 19px 16px;
+    }
+  }
+
+  &__access {
+    padding: 24px 0;
+  }
+}
