@@ -1,15 +1,15 @@
 {
-  "name": "nursery-sample01",
+  "name": "heartness-studio",
   "version": "1.0.0",
-  "description": "this is sample site",
-  "main": "webpack.config.js",
+  "description": "this is official web site for heartness studio",
+  "main": "server.js",
   "scripts": {
     "start": "node ./server.js",
     "build": "gulp build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/m0nch1/nursery-sample01.git"
+    "url": "git+https://github.com/m0nch1/heartness-studio.git"
   },
   "keywords": [],
   "author": "",
