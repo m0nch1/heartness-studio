@@ -6,15 +6,37 @@ block vars
   - var page = pages[key]
 
 block contents
-  .container
+  .parallax
+    h2.message "make your sense"
+    a(href="#container").hero__scroll.js-smooth-scroll Scroll
+  .container#container
 
-    .hero
-      .hero__img
-      a(href="#").hero__scroll Scroll
-      .hero__sns
-        .hero__icon--twitter
-          img(src="../images/icon/twitter.svg" alt="twitter icon")
-        .hero__icon--instagram
-          img(src="../images/icon/instagram.svg" alt="instagram icon")
-        .hero__icon--facebook
-          img(src="../images/icon/facebook.svg" alt="facebook icon")
+    .service
+      h2.service__title "What can we do"
+      .service__container
+        .service__card
+          img.service__icon(src="../images/icon/film.svg" alt="")
+          .service__content 動画制作サポート
+          a.service__link READ MORE
+      .service__container
+        .service__card
+          img.service__icon(src="../images/icon/play.svg" alt="")
+          .service__content YouTubeコンサルティング
+          a.service__link READ MORE
+      .service__container
+        .service__card
+          img.service__icon(src="../images/icon/video-camera.svg" alt="")
+          .service__content ライブ配信事業
+          a.service__link READ MORE
+      .service__container
+        .service__card
+          img.service__icon(src="../images/icon/earth.svg" alt="")
+          .service__content Webマーケティング
+          a.service__link READ MORE
+
+  .about
+    .about__container
+      h2.about__title "Image about service"
+      a.about__link All service
+    .about__container
+      video.about__video(controls src="../media/about.mp4" poster="../images/pages/top/poster.png")

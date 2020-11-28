@@ -33,6 +33,8 @@ const paths = {
   jsDist: "./dist/js/",
   imageSrc: "./src/images/**/*",
   imageDist: "./dist/images/",
+  mediaSrc: "./src/media/**/*",
+  mediaDist: "./dist/media/",
 };
 
 const PATHS = {
@@ -51,6 +53,10 @@ const PATHS = {
   image: {
     src: "./src/images/**/*",
     dest: "./dist/images",
+  },
+  media: {
+    src: "./src/media/**/*",
+    dest: "./dist/media",
   },
 };
 
@@ -134,6 +140,10 @@ const image = () => {
     .pipe(gulp.dest(PATHS.image.dest));
 };
 
+const media = () => {
+  return src(PATHS.media.src).pipe(gulp.dest(PATHS.media.dest));
+};
+
 const browserSyncFunc = () => {
   return browserSync.init({
     server: {
@@ -160,11 +170,14 @@ const watchFiles = () => {
   watch(paths.scssSrc, series(scss2Css, browserReload));
   watch(paths.jsSrc, series(jsBabel, browserReload));
   watch(paths.imageSrc, series(image, browserReload));
+  watch(paths.mediaSrc, series(media, browserReload));
 };
 
-exports.build = series(parallel(clean, pug2Html, scss2Css, jsBabel, image));
+exports.build = series(
+  parallel(clean, pug2Html, scss2Css, jsBabel, image, media)
+);
 
 exports.default = series(
-  series(clean, pug2Html, scss2Css, jsBabel, image),
+  series(clean, pug2Html, scss2Css, jsBabel, image, media),
   parallel(watchFiles, browserSyncFunc)
 );
