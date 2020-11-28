@@ -4,6 +4,7 @@
   "description": "this is sample site",
   "main": "webpack.config.js",
   "scripts": {
+    "start": "node ./server.js",
     "build": "gulp build"
   },
   "repository": {
