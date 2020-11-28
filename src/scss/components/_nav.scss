@@ -83,7 +83,7 @@
   height: 100%;
   background: black;
   opacity: 0;
-  transition: 0.3s ease-in-out;
+  transition: 0.1s ease-in-out;
 }
 
 #nav-content {
@@ -96,7 +96,8 @@
   max-width: 330px;
   height: 100%;
   background: #fff;
-  transition: 0.3s ease-in-out;
+  opacity: 0;
+  transition: 0.1s ease-in-out;
   -webkit-transform: translateX(-105%);
   transform: translateX(-105%);
 }
@@ -107,6 +108,7 @@
 }
 
 #nav-input:checked ~ #nav-content {
+  opacity: 1;
   -webkit-transform: translateX(0%);
   transform: translateX(0%);
   box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
