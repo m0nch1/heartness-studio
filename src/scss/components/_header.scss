@@ -20,11 +20,13 @@
     }
     a {
       display: flex;
+      height: auto;
       @include tablet {
         justify-content: center;
       }
     }
     img {
+      align-self: flex-start;
       width: 60%;
       @include tablet {
         width: 30%;
