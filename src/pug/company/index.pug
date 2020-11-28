@@ -1,0 +1,14 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "company"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja 会社概要
+      .title__en Company
+    .hero
+      .hero__image--company

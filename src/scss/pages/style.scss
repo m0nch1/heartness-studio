@@ -13,9 +13,9 @@ body {
 }
 
 .container {
-  padding: 150px 8vw 0px;
+  padding: 100px 8vw 0px;
   @include mobile {
-    padding: 80px 8vw 0px;
+    padding: 50px 8vw 0px;
   }
 }
 
@@ -41,9 +41,21 @@ body {
   }
 
   &__image {
+    &--company {
+      @include image;
+      background-image: url(../../images/pages/company/top.jpg);
+    }
+    &--service {
+      @include image;
+      background-image: url(../../images/pages/service/top.jpg);
+    }
     &--news {
       @include image;
       background-image: url(../../images/pages/news/top.jpg);
+    }
+    &--contact {
+      @include image;
+      background-image: url(../../images/pages/contact/top.jpg);
     }
   }
 }
