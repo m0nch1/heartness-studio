@@ -72,6 +72,8 @@ html {
     width: 1px;
     height: 100px;
     background: #fff;
+    transform: scale(1, 0);
+    transform-origin: 0 0;
     animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
   }
 }
