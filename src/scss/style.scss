@@ -49,10 +49,11 @@ html {
   }
 
   a {
-    position: absolute;
     display: inline-block;
+    position: absolute;
     right: 40px;
     bottom: 0;
+    z-index: 2;
     padding: 10px 10px 110px;
     overflow: hidden;
     color: #fff;
