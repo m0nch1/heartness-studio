@@ -70,11 +70,9 @@ html {
     bottom: 0;
     left: 50%;
     width: 1px;
-    height: 100px;
     background: #fff;
-    transform: scale(1, 0);
-    transform-origin: 0 0;
-    animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+    height: 30px;
+    animation: sdl 1.5s ease infinite;
   }
 }
 
@@ -92,20 +90,11 @@ html {
 
 @keyframes sdl {
   0% {
-    transform: scale(1, 0);
-    transform-origin: 0 0;
+    transform: translateY(-70px);
   }
-  50% {
-    transform: scale(1, 1);
-    transform-origin: 0 0;
-  }
-  50.1% {
-    transform: scale(1, 1);
-    transform-origin: 0 100%;
-  }
+  50%,
   100% {
-    transform: scale(1, 0);
-    transform-origin: 0 100%;
+    transform: translateY(30px);
   }
 }
 
