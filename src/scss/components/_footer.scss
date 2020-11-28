@@ -1,10 +1,10 @@
 .footer {
   z-index: 5;
   position: relative;
-  margin: 24px 8vw 0;
-  padding-top: 24px;
+  padding: 24px 8vh 0;
   display: flex;
   flex-wrap: wrap;
+  background-color: #fff;
   @include mobile {
     padding: 16px 20px;
   }

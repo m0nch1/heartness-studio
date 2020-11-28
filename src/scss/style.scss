@@ -18,14 +18,22 @@ html {
 .parallax {
   position: relative;
   height: 100%;
-  background-image: url("../images/pages/top/shilhouette.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/pages/top/shilhouette.jpg") center no-repeat;
+    background-size: cover;
+  }
 
   .message {
     color: #fff;
@@ -101,15 +109,16 @@ html {
 }
 
 .container {
-  padding: 10px;
   z-index: 5;
   position: relative;
 }
 
 .service {
+  padding: 10px;
   display: flex;
   flex-wrap: wrap;
-  margin: 64px 0;
+  padding: 64px 0;
+  background-color: #fff;
   &__title {
     width: 100%;
     text-align: center;
@@ -157,16 +166,14 @@ html {
 .about {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("../images/pages/top/camera.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   filter: grayscale(100%);
   height: 60vh;
   color: #fff;
   position: relative;
   z-index: 5;
+  background: url("../images/pages/top/camera.jpg") center no-repeat;
+  background-size: cover;
+
   &__title {
     width: 100%;
     text-align: center;
