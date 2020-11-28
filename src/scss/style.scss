@@ -48,8 +48,6 @@ html {
       height: 100px;
     }
     &::after {
-      transform: scale(1, 0);
-      transform-origin: 0 0;
       animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
     }
     @keyframes sdl {
