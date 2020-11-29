@@ -27,12 +27,12 @@
     }
     img {
       align-self: flex-start;
-      width: 60%;
+      width: 50%;
       @include tablet {
         width: 30%;
       }
       @include mobile {
-        width: 50%;
+        width: 40%;
       }
     }
   }

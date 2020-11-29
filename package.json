@@ -1,7 +1,7 @@
 {
   "name": "heartness-studio",
   "version": "1.0.0",
-  "description": "this is official web site for heartness studio",
+  "description": "this is official web site for Heartness",
   "main": "server.js",
   "scripts": {
     "build": "gulp build"
