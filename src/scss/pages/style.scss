@@ -9,10 +9,14 @@
 
 body {
   margin: 0;
-  font-family: $yu;
+  font-family: $Montserrat;
+  display: flex;
+  flex-flow: column;
+  min-height: 100vh;
 }
 
 .container {
+  flex: 1;
   padding: 100px 8vw 0px;
   @include mobile {
     padding: 50px 8vw 0px;
@@ -100,5 +104,31 @@ body {
 
   &__access {
     padding: 24px 0;
+  }
+}
+
+.news {
+  padding: 24px 0;
+  &__link {
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    display: block;
+    padding: 16px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  &__date {
+    font-size: 1rem;
+    color: #495057;
+    line-height: 100%;
+  }
+  &__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  &__detail {
+    font-size: 14px;
+    line-height: 32px;
   }
 }
