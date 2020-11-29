@@ -132,3 +132,110 @@ body {
     line-height: 32px;
   }
 }
+
+#marketing,
+#video-edit,
+#consulting,
+#live-streaming {
+  scroll-margin-top: 72px;
+}
+
+.service {
+  padding: 24px 0;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 24px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include mobile {
+      width: 100%;
+      padding: 24px 0;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+  &__title {
+    font-size: 2.7vw;
+    font-weight: bold;
+    line-height: 140%;
+    margin-bottom: 24px;
+    @include mobile {
+      text-align: left;
+      font-size: 6vw;
+      font-weight: bold;
+      margin-bottom: 0;
+      border-left: 5px solid #1bbb6c;
+      padding-left: 6%;
+      border-radius: 1px;
+      letter-spacing: 0.01rem;
+    }
+  }
+  &__desc {
+    font-size: 1.4vw;
+    line-height: 190%;
+    @include mobile {
+      font-size: 3.8vw;
+      line-height: 190%;
+      text-align: justify;
+      margin-top: 5%;
+      letter-spacing: 0.02rem;
+    }
+  }
+  &__article {
+    background: #f3f5f7;
+    border-radius: 10px;
+    padding: 24px;
+    margin: 0 24px 40px;
+    @include mobile {
+      margin: 0;
+    }
+  }
+  &__intro {
+    background: #fff;
+    padding: 16px;
+    margin-bottom: 16px;
+    header {
+      text-align: center;
+      font-weight: bold;
+    }
+    p::before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background: #ddd;
+      display: block;
+      position: inherit;
+      margin-right: 0;
+      margin: 14px 0 17px;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__content {
+    margin-bottom: 16px;
+  }
+  &__content-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+    &::before {
+      content: "●";
+      color: #1bbb6c;
+      font-size: 94%;
+      margin-right: 3px;
+    }
+  }
+}
