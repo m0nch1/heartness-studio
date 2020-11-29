@@ -241,3 +241,10 @@ body {
     }
   }
 }
+
+.contact {
+  padding: 24px 0;
+  &__form {
+    width: 100%;
+  }
+}
