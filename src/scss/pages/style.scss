@@ -137,11 +137,10 @@ body {
 #video-edit,
 #consulting,
 #live-streaming {
-  scroll-margin-top: 72px;
+  padding: 48px 0 68px;
 }
 
 .service {
-  padding: 24px 0;
   &__row {
     display: flex;
     flex-wrap: wrap;
@@ -170,14 +169,17 @@ body {
     line-height: 140%;
     margin-bottom: 24px;
     @include mobile {
-      text-align: left;
+      text-align: center;
       font-size: 6vw;
       font-weight: bold;
       margin-bottom: 0;
-      border-left: 5px solid #1bbb6c;
-      padding-left: 6%;
       border-radius: 1px;
-      letter-spacing: 0.01rem;
+      width: 100%;
+      &::before {
+        content: "";
+        padding-right: 10px;
+        border-left: 5px solid #1bbb6c;
+      }
     }
   }
   &__desc {
@@ -195,7 +197,7 @@ body {
     background: #f3f5f7;
     border-radius: 10px;
     padding: 24px;
-    margin: 0 24px 40px;
+    margin: 0 24px;
     @include mobile {
       margin: 0;
     }
