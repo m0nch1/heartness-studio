@@ -24,7 +24,7 @@ html {
 
   &__scroll {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     right: 40px;
     bottom: 0;
     z-index: 2;
