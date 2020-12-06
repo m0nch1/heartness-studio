@@ -1,0 +1,69 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "service_consulting"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja YouTubeマーケティング・グロース支援
+      .title__en--small YouTube Marketing Growth Support
+    .hero
+      .hero__image--service_consulting
+
+    .detail
+      h2.detail__message 
+        | 企業のサービス・商品を安価に認知してもらうために、もはや必須とも言えるYouTubeを活用した集客をサポート。
+        br
+        | チャンネル登録者 / 動画視聴回数の向上などのグロース支援、動画マーケティング、YouTubeのマネタイズのプランニング、YouTube制作内製のサポートなど多岐にわたり支援します。
+
+
+      .detail__point
+        .detail__row 
+          .detail__strong 弊社の強み
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/study.svg")
+          .detail__title
+            | YouTubeをグロースする上で重要なタスクをフォーマット化し効率的にサポートします。
+          .detail__desc
+            | 動画公開までに必要な、企画、撮影、編集、分析等のタスクをフォーマット化
+            br
+            | 誰が支援しても安定したノウハウを提供できる体制を構築
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/student.svg")
+          .detail__title
+            | 動画制作のノウハウを内製化もサポートします。
+          .detail__desc
+            | 内製化のサポートも行っており、技術習得と同時に社内で運用できる状態に支援します。
+            br
+            | 企画、撮影、編集、分析すべての工程で対応可能です。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/connect.svg")
+          .detail__title
+            | 現役YouTuberと提携
+          .detail__desc
+            | YouTuberとして100万登録者、100社以上の動画制作実績とナレッジをもつ現役YouTuberと提携。
+            br
+            | 最新のサムネイル作成・タイトル・キーワードのトレンドなど鮮度の高い情報を提供できます。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/eye.svg")
+          .detail__title
+            | 弊社独自のノウハウを活用し、様々なソリューションを提供します。
+          .detail__desc
+            | クライアント様毎に何が課題なのかをしっかりとヒアリングし解決策を導きます。
+            br 
+            | 課題徹底的に言語化をし、有効な施策とは何かご一緒に考えさせていただきます。
+            br
+            | 基礎知識の共有、マーケティング戦略立案、動画SEO対策、SNSメディア連動など様々なソリューションを提案します。
+
+

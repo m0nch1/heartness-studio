@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Speed</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <circle data-name="layer3"
+  cx="32" cy="32" r="30" fill="#dde5f4"></circle>
+  <path data-name="layer2" d="M14 33H8a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zm18-18a1 1 0 0 1-1-1V8a1 1 0 0 1 2 0v6a1 1 0 0 1-1 1zm24 18h-6a1 1 0 0 1 0-2h6a1 1 0 0 1 0 2zM45 21a1 1 0 0 1-.707-1.707l4-4a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 45 21z"
+  fill="#7c89ad"></path>
+  <path data-name="opacity" d="M15.3 15.542L2.191 28.649A30.308 30.308 0 0 0 2 32a29.968 29.968 0 0 0 13.3 24.925l20.95-20.948z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="layer1" d="M15.183 16.544A.976.976 0 0 1 15 16a1 1 0 0 1 1-1 1.01 1.01 0 0 1 .489.127l18.748 11.821a6 6 0 1 1-8.154 8.486z"
+  fill="#f66"></path>
+</svg>

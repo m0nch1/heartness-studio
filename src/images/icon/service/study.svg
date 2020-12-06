@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Study</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M32 60a.994.994 0 0 1-.414-.09l-30-13.634A1 1 0 0 1 1 45.369V5a1 1 0 0 1 1.4-.916L32 16.908 61.6 4.082A1 1 0 0 1 63 5v40.369a1 1 0 0 1-.586.91l-30 13.634A.994.994 0 0 1 32 60z"
+  fill="#f27e7c"></path>
+  <path data-name="opacity" d="M1.451 4.162A1 1 0 0 0 1 5v40.369a1 1 0 0 0 .586.91l30 13.634A.985.985 0 0 0 32 60V16.908L2.4 4.082a1 1 0 0 0-.949.08z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="layer1" fill="#cce3ff" d="M54.001 44l-22 9.998L9.999 44V4l22.002 9.15 22-9.15v40z"></path>
+  <path data-name="opacity" fill="#fff" opacity=".4" d="M32 13.15v40.848L54 44V4l-22 9.15z"></path>
+</svg>

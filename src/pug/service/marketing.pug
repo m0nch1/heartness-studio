@@ -1,0 +1,54 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "service_marketing"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja Webデジタルマーケティング / 広告・SMS運用サポート
+      .title__en--small Web Digital Marketing / Advertising and SMS Operations Support
+    .hero
+      .hero__image--service_marketing
+
+    .detail
+      h2.detail__message 
+        | SEO・SNS・YouTube・インフルエンサーなどを活用したマーケティング戦略の立案から実行支援。
+        br
+        | YouTube、Instagram、Twitter、 ASA(Apple Search Ads)・Google・Yahoo!などの広告運用をトータルでサポート致します。
+
+      .detail__point
+        .detail__row 
+          .detail__strong 弊社の強み
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/support.svg")
+          .detail__title
+            | 少数精鋭での充実したサポート体制
+          .detail__desc
+            | 弊社では一人当たりのご担当クライアント数に制限を設けております。
+            br 
+            | 広告の運用だけでなくマーケティングについてトータルサポートできる環境が整っております。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/money.svg")
+          .detail__title
+            | 業界最低水準の広告運用費
+          .detail__desc
+            | 本来割くべき広告予算が運用するためのコストに配分されていては本末転倒。
+            br 
+            | 弊社では代理店を挟まない直接取引の徹底によりコスト削減。業界最低水準を実現しております。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/confirm.svg")
+          .detail__title
+            | 業界最低水準の広告運用費
+          .detail__desc
+            | 本来割くべき広告予算が運用するためのコストに配分されていては本末転倒。
+            br 
+            | 弊社では代理店を挟まない直接取引の徹底によりコスト削減。業界最低水準を実現しております。

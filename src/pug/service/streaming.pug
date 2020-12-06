@@ -1,0 +1,60 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "service_streaming"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja ライブ配信事業
+      .title__en--small Live Streaming Business
+    .hero
+      .hero__image--service_streaming
+
+    .detail
+      h2.detail__message 
+        | “生”だから届くものがある。ライブ配信、ストリーミングサービスのサポートを致します。
+        br 
+        | 企画、撮影、ディレクション、キャスティング、スイッチング、配信など経験豊富な専門スタッフがニーズに合わせてサポート致します。
+
+      .detail__point
+        .detail__row 
+          .detail__strong 弊社の強み
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/headphones.svg")
+          .detail__title
+            | 専門スタッフによる生配信サポート
+          .detail__desc
+            | スイッチングした映像と音声で リアルタイムで配信
+            br
+            | ライブ、e-Sports、イベント、トークショー、社内配信、学校行事、YouTube企画までサポート
+            br 
+            | 配信だけではなく、イベント企画、 キャスティング、現場オペレーションまで ご要望に合わせて支援します。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/student.svg")
+          .detail__title
+            | 配信業務をトータルサポートできます
+          .detail__desc
+            | 会場手配・企画・撮影・配信を全て一括でトータルサポート可能です。
+            br
+            | 提携スポンサーのマッチングや、1日から中長期のプロリーグのコミュニティイベントまで一気通貫でご提案。
+            br
+            | YouTube、Mildom、Facebook、Twitter Liveなど様々なプラットフォームに対応した配信が可能です。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/game.svg")
+          .detail__title
+            | esportsの配信に特に強みがあります
+          .detail__desc
+            | esportsの各タイトルに精通した人材がサポートするのでゲーム理解があります。
+            br
+            | ストリーマーやプロチームと連携しているのでアサインのフォローもできます。
+            br 
+            | 複数のesportsイベントでのサポート実績があります。

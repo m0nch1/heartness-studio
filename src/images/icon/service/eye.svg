@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Eye</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer4"
+  d="M32 14.484C14.792 14.484 2.5 32 2.5 32S14.792 49.516 32 49.516 61.5 32 61.5 32 49.209 14.484 32 14.484z"
+  fill="#dcf2fa"></path>
+  <circle data-name="layer3" cx="32" cy="31.511" r="10" fill="#a85d43"></circle>
+  <path data-name="opacity" d="M9.739 39.844c4.64 4.11 11.249 8.491 19.058 9.469l10.462-10.93-14.371-13.9z"
+  fill="#000064" opacity=".15"></path>
+  <circle data-name="layer2" cx="32" cy="31.511" r="5" fill="#3f5275"></circle>
+  <circle data-name="layer1" cx="32.999" cy="30.511" r="2" fill="#fff"></circle>
+</svg>

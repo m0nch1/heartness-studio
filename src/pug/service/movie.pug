@@ -1,0 +1,73 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "service_movie"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja 動画 / クリエイティブ制作
+      .title__en--small Video / Creative Creation
+    .hero
+      .hero__image--service_movie
+
+    .detail
+      h2.detail__message 
+        | 商品・サービスの概要をお伝えする上で、必須となった動画を活用したコンテンツ制作を行います。
+        br
+        | サムネイル・テロップ・カット・BGM・効果音等の動画制作全般業務全てにご対応その他本格的な機材を活用した撮影・制作サポート、映像コンテンツ制作のディレクション、YouTubeやTiktokを活用した事業化サポートなど。
+
+      .detail__point
+        .detail__row 
+          .detail__strong 弊社の強み
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/movie.svg")
+          .detail__title
+            | 豊富なバリエーションの動画制作ができる
+          .detail__desc
+            | YouTube - SNS - 等で活用できる動画をご制作。
+            br
+            | ご利用シーンに合わせ、最適な時間・イメージの動画を作成。
+            br 
+            | アニメーション・実写 - 様々なニーズにもご対応可能。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/files.svg")
+          .detail__title
+            | 大量制作サービスにも対応しています
+          .detail__desc
+            | ABテストを行うために必要な動画数を担保。
+            br 
+            | 期日内に、大量の動画を安価に作成することが可能。
+            br
+            | 急な動画制作ニーズにもご対応
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/support.svg")
+          .detail__title
+            | 安心のサポート体制
+          .detail__desc
+            | 動画制作後の修正依頼にもご対応
+            br 
+            | 効果検証後の修正依頼も可能
+            br 
+            | サポートデスクによる迅速かつ正確にご対応
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/consultant.svg")
+          .detail__title
+            | 動画広告運用コンサルティング
+          .detail__desc
+            | 動画制作だけでなく広告動画の効果測定も行います。
+            br 
+            | 別途、動画広告運用の丸投げプランもご用意
+            br 
+            | 効果検証後のプランニング・有効な戦略立案までサポート
+

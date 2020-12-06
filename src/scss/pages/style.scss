@@ -32,6 +32,9 @@ body {
   &__en {
     font-family: $Montserrat;
     font-size: 32px;
+    &--small {
+      font-size: 24px;
+    }
   }
 }
 
@@ -52,6 +55,26 @@ body {
     &--service {
       @include image;
       background-image: url(../../images/pages/service/top.jpg);
+    }
+    &--service_marketing {
+      @include image;
+      background-image: url(../../images/pages/service/marketing.jpg);
+    }
+    &--service_movie {
+      @include image;
+      background-image: url(../../images/pages/service/movie.jpg);
+    }
+    &--service_consulting {
+      @include image;
+      background-image: url(../../images/pages/service/consulting.jpg);
+    }
+    &--service_streaming {
+      @include image;
+      background-image: url(../../images/pages/service/streaming.jpg);
+    }
+    &--service_web {
+      @include image;
+      background-image: url(../../images/pages/service/web.jpg);
     }
     &--news {
       @include image;
@@ -141,104 +164,193 @@ body {
 }
 
 .service {
-  &__row {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  $color-header: #0d0d0d;
+  $color-text: #404040;
+
+  $color-btn-text: #3363ff;
+  $color-btn-background: #e6ecff;
+
+  $transition: 0.2s;
+  display: flex;
+  flex-wrap: wrap;
   &__col {
     width: 50%;
-    box-sizing: border-box;
-    padding: 24px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     @include mobile {
       width: 100%;
-      padding: 24px 0;
-    }
-    img {
-      width: 100%;
-      border-radius: 10px;
     }
   }
-  &__title {
-    font-size: 2.7vw;
-    font-weight: bold;
-    line-height: 140%;
-    margin-bottom: 24px;
+  &__wrapper {
+    margin: 2em;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: $transition;
     @include mobile {
-      text-align: center;
-      font-size: 6vw;
-      font-weight: bold;
-      margin-bottom: 0;
-      border-radius: 1px;
+      margin: 1em;
+    }
+
+    &:hover {
+      transform: translateY(-0.5%);
+      box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.3);
+    }
+  }
+  .card {
+    &__img {
+      display: block;
       width: 100%;
-      &::before {
-        content: "";
-        padding-right: 10px;
-        border-left: 5px solid #1bbb6c;
+      height: 18rem;
+      object-fit: cover;
+      @include mobile {
+        height: 10rem;
+      }
+    }
+
+    &__content {
+      padding: 2rem;
+      background-color: #f5f5f5;
+      @include mobile {
+        padding: 1rem;
+      }
+    }
+
+    &__header {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: $color-header;
+      margin-bottom: 1rem;
+      min-height: 55px;
+    }
+
+    &__text {
+      font-size: 1rem;
+      letter-spacing: 0.1rem;
+      line-height: 1.7;
+      color: darken($color-text, 1%);
+      margin-bottom: 2rem;
+      min-height: 85px;
+    }
+
+    &__btn {
+      display: block;
+      width: 100%;
+      padding: 0;
+      font-size: 1rem;
+      text-align: center;
+      color: $color-btn-text;
+      background-color: $color-btn-background;
+      border: none;
+      border-radius: 0.4rem;
+      transition: $transition;
+      cursor: pointer;
+
+      span {
+        margin-left: 1rem;
+        transition: $transition;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+      }
+
+      &:hover,
+      &:active {
+        background-color: darken($color-btn-background, 2%);
+
+        span {
+          margin-left: 1.5rem;
+        }
       }
     }
   }
-  &__desc {
-    font-size: 1.4vw;
+}
+
+.detail {
+  &__message {
+    font-size: 16px;
     line-height: 190%;
-    @include mobile {
-      font-size: 3.8vw;
-      line-height: 190%;
-      text-align: justify;
-      margin-top: 5%;
-      letter-spacing: 0.02rem;
-    }
-  }
-  &__article {
-    background: #f3f5f7;
-    border-radius: 10px;
-    padding: 24px;
-    margin: 0 24px;
-    @include mobile {
-      margin: 0;
-    }
-  }
-  &__intro {
-    background: #fff;
-    padding: 16px;
-    margin-bottom: 16px;
-    header {
-      text-align: center;
-      font-weight: bold;
-    }
-    p::before {
-      content: "";
-      height: 1px;
-      width: 100%;
-      background: #ddd;
-      display: block;
-      position: inherit;
-      margin-right: 0;
-      margin: 14px 0 17px;
-    }
+    font-weight: 500;
+    margin: 2rem 0 1rem;
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
+  &__row {
+    width: 100%;
+    text-align: center;
+  }
+
+  &__point {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__strong {
+    position: relative;
+    display: inline-block;
+    padding: 0 55px;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 1rem 0;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 44%;
+      display: inline-block;
+      width: 45px;
+      height: 2px;
+      background-color: black;
+    }
+    &:before {
+      left: 0;
+    }
+    &:after {
+      right: 0;
+    }
   }
 
   &__content {
-    margin-bottom: 16px;
-  }
-  &__content-title {
-    font-size: 24px;
-    margin-bottom: 8px;
-    &::before {
-      content: "●";
-      color: #1bbb6c;
-      font-size: 94%;
-      margin-right: 3px;
+    text-align: left;
+    width: 50%;
+    padding: 2em;
+    box-sizing: border-box;
+    @include tablet {
+      width: 100%;
+      padding: 0;
+      margin-bottom: 3em;
     }
+  }
+  &__icon {
+    max-width: 40px;
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #282828;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__desc {
+    font-size: 1em;
+    line-height: 1.8;
+    color: #282828;
+    letter-spacing: 0.05em;
   }
 }
 

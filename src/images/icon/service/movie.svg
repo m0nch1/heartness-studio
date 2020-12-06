@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Play Video</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <rect data-name="layer3"
+  x="2" y="10" width="60" height="44" rx="2" ry="2" fill="#d34545"></rect>
+  <path data-name="layer2" fill="#f26161" d="M2 18h60v28H2z"></path>
+  <path data-name="opacity" fill="#000064" opacity=".15" d="M43 10h2v8h-2zm-24 0h2v8h-2zm24 36h2v8h-2zm-24 0h2v8h-2z"></path>
+  <path data-name="opacity" fill="#000064" opacity=".15" d="M6.76 46l18.447.001 13.549-13.55L26.38 26.38 6.76 46z"></path>
+  <path data-name="layer1" d="M27.81 26.274A1.174 1.174 0 0 0 26 27.425v9.152a1.174 1.174 0 0 0 1.811 1.149l10.379-4.875c1-.468 1-1.233 0-1.7z"
+  fill="#fff"></path>
+</svg>

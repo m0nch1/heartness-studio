@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Headphones User</title>
+  <desc>A flat styled icon from Orion Icon Library.</desc>
+  <path data-name="layer2"
+  d="M41.858 19.456a1 1 0 0 1-1-1 15 15 0 0 0-30 0 1 1 0 0 1-2 0 17 17 0 0 1 34 0 1 1 0 0 1-1 1z"
+  fill="#7b8baf"></path>
+  <path data-name="opacity" d="M41.858 19.456a1 1 0 0 1-1-1 15 15 0 0 0-30 0 1 1 0 0 1-2 0 17 17 0 0 1 34 0 1 1 0 0 1-1 1z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="layer1" d="M33.76 39.833a15.3 15.3 0 0 0 6.1-12.379c0-8.283-6.268-15-14-15s-14 6.715-14 15a15.3 15.3 0 0 0 6.1 12.379 24.146 24.146 0 0 0-16.1 22.623h48a24.147 24.147 0 0 0-16.1-22.623z"
+  fill="#8fa9d8"></path>
+  <path data-name="layer2" d="M14.62 18.537v-.081H7.858a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h6.762v-.088a15.771 15.771 0 0 1 0-17.83z"
+  fill="#7b8baf"></path>
+  <path data-name="opacity" d="M14.62 18.537v-.081H7.858a4 4 0 0 0-4 4v10a4 4 0 0 0 4 4h6.762v-.088a15.771 15.771 0 0 1 0-17.83z"
+  fill="#000064" opacity=".15"></path>
+  <path data-name="layer2" d="M37.1 36.367v.089h6.762a4 4 0 0 0 4-4v-10a4 4 0 0 0-4-4H37.1v.081a15.77 15.77 0 0 1 0 17.83z"
+  fill="#7b8baf"></path>
+  <path data-name="opacity" d="M21.23 27.3l-7.54 7.542a14.732 14.732 0 0 0 4.266 4.991 24.146 24.146 0 0 0-16.1 22.623h9.279L33.76 39.833z"
+  fill="#000064" opacity=".15"></path>
+  <ellipse data-name="layer1" cx="25.835" cy="27.456" rx="14" ry="15"
+  fill="#8fa9d8"></ellipse>
+  <path data-name="opacity" d="M25.858 12.458h-.023c-7.733 0-14 6.716-14 15s6.268 15 14 15h.024z"
+  fill="#000064" opacity=".15"></path>
+</svg>

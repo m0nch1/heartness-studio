@@ -1,0 +1,53 @@
+extends ../layouts/_pages.pug
+
+block vars
+  include ../_config.pug
+  - var key = "service_web"
+  - var page = pages[key]
+
+block contents
+  .container
+    h1.title
+      .title__ja Web・アプリ開発事業
+      .title__en--small Web & App Development Business
+    .hero
+      .hero__image--service_web
+
+    .detail
+      h2.detail__message 
+        | 企画からデザイン・構築、保守・運用までトータルサポートします。
+        br
+        | お客様ニーズに合わせてCMSサイトから、ECサイト等のシステマチックなサイトまでさまざまなサイトを構築いたします。
+        br 
+        | 業務アプリケーションの開発も支援可能です。
+
+      .detail__point
+        .detail__row 
+          .detail__strong 弊社の強み
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/speed.svg")
+          .detail__title
+            | 圧倒的なスピード感
+          .detail__desc
+            | No-code（ノーコード）を用いて仮説検証のMVP（機能最小限の完成形イメージ）を3週間前後で対応可能。
+            br
+            | ノーコード利用により、ウェブサイト、ECサイトをパッケージ化、内容次第で１ヶ月以内でのご納品も可能です。
+            br
+            | ウェブサイト制作ではデータドリブンでDXを重視した最適なユーザーインターフェースを実現します。
+
+        .detail__content
+          .detail__icon
+            img(src="../images/icon/service/champion.svg")
+          .detail__title
+            | 様々な種類のWeb・アプリでの受託制作実績有り
+          .detail__desc
+            | 在籍エンジニアはこれま豊富な受託制作の実績があります。
+            br
+            | これまで婚活マッチングサイト、店舗用従業員管理システム、自社アプリ開発、小説販売プラットフォーム
+            br
+            | 職業紹介サービス・スマホアプ、フリーランス向けECサイトの構築などを一気通貫で支援
+            br
+            | 業務提携先の海外オフショアと連携し、最新の開発事例にも対応します
+
